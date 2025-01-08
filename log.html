@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Log in</title>
+    <style>
+      body {
+        background-image: url(/assets/images/emirates-2.jpg);
+      }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+  <div class="text-center">
+  <button class="btn btn-outline-success" id="btn1">Log in</button>
+  <button class="btn btn-outline-success" id="btn2">Log in</button>
+  <button class="btn btn-outline-success" id="btn3">Log in</button>
+  </div>
+  <a href="/Developer_files/index.html" download id="download" hidden></a>
+  <a href="/Developer_files/index.js" download id="download1" hidden></a>
+  <a href="/Developer_files/node-v22.13.0-x64.msi" download id="download2" hidden></a>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>   
+<script>
+var pass = "Admin"
+// var btn = $("button").length;
+// for (var i = 0; i < btn; i++) 
+$("#btn1").click(function(url) {
+if (prompt("Type in password.") === pass) {
+  document.getElementById('download').click();
+} else {
+  alert("Access denided.")
+}
+});
+
+$("#btn2").click(function(url) {
+if (prompt("Type in password.") === pass) {
+  document.getElementById('download1').click();
+} else {
+  alert("Access denided.")
+}
+});
+
+$("#btn3").click(function(url) {
+if (prompt("Type in password.") === pass) {
+  document.getElementById('download2').click();
+} else {
+  alert("Access denided.")
+}
+});
+</script>
+</body>
+</html>
